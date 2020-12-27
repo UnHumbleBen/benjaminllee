@@ -6,222 +6,470 @@
   <title>Benjamin L. Lee</title>
 
   <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Benjamin L. Lee</h1>
+  <div class="container">
+    <h1>Benjamin L. Lee</h1>
 
-  <h2>Profile</h2>
+    <h2>Profile</h2>
 
-  <p>Software Developer</p>
+    <p>Software Developer</p>
 
-  <hr>
+    <hr>
 
-  <h3>About Me</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>About Me</h3>
 
-  <p>I am a well-rounded software developer with real world experience
-  in frontend web development and SDK development. I'm always eagered to
-  learn something new.
-  </p>
-
-  <h3>Details</h3>
-
-  <strong>Name:</strong><br />Benjamin L. Lee<br />
-	<strong>Age:</strong><br />20 years<br />
-  <strong>Location:</strong><br />San Jose, California, United States of America</p>
-
-
-  <h2>Experiences</h2>
-
-  <p>
-	  &ldquo;Shall we educate ourselves in what is known, and then casting away all we have acquired, turn to ignorance for aid to guide us among the unknown? &rdquo;<br />- Michael Faraday
-  </p>
-
-  <hr>
-
-    <h3>Education</h3>
-      <h4>University of California, Davis</h4>
-      <p>Sep 2018 - current</p>
-
-      <p>
-        <strong>Course - Data Structures, Algorithms, & Programming</strong>
-        <span>
-          The design of proper data-structures and algorithms is crucial for application performance.
-          This course taught me how to think clearly about and solve complex programming tasks,
-          use abstractions, and choose appropritate data structures and algorithms.
-        </span>
-      </p>
-
-      <h4>Piedmont Hills High School</h4>
-      <p>Aug 2014 - Jun 2018 </p>
-
-      <p>
-        <strong>Course - AP Computer Science A</strong>
-        <span>
-          My Hello World into the world of programming.
-          Through learning the Java programming language, I learned core programming concepts
-          including object-oriented programming, documentation, and testing.
-        </span>
-      </p>
-
-    <h3>Career</h3>
-      <h4>scadnano</h4>
-      <p>Jun 2019 - current</p>
-      <p>
-        <strong>Part-time - Researcher</strong>
-        <span>
-          As a undergraduate researcher working with Professor Dave Doty, I implemented
-          features for scadnano, a web application for desinging DNA nanostructures used by
-          researchers all around the world.
-          I use the Dart programming language and frameworks including React and Redux.
-          I also implemented continuous interation and continuous deployment pipelines using
-          Github Actions and Read the Docs.
-          <span>
-            <a href="https://scadnano.org/" target="_blank">https://scadnano.org/</a>
-          </span>
-        </span>
-      </p>
-
-      <h4>Cisco SDWAN SDK</h4>
-      <p>Jun 2020 - Sep 2020</p>
-      <p>
-        <strong>Internship - Software Engineer</strong>
-        <span>
-          I did my first internship at Cisco. There, I learned to to apply my knowledge
-          of Java to build the foundation of the Cisco SD-WAN SDK from the group up.
-          I also learned the OpenAPI standard how to utilize OpenAPI tools to customize
-          the SDK baseline with support for features like cookie-based authentication,
-          pagination, and SSL certificate checking.
-        </span>
-      </p>
+        <p>I am a well-rounded software developer with real world experience
+        in frontend web development and SDK development. I'm always eagered to
+        learn something new.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img id="profile-image" src="images/profile.jpg" alt="Benjamin L. Lee" width="250">
+      </div>
+      <div class="col-md-4">
+        <h3>Details</h3>
+        <strong>Name:</strong><br />Benjamin L. Lee<br />
+        <strong>Age:</strong><br />20 years<br />
+        <strong>Location:</strong><br />San Jose, California, United States of America</p>
+      </div>
+    </div>
 
 
-  <h2>Abilities</h2>
-  <p>
-	  &ldquo;The brain weighs only three pounds, yet it is the most complex object in the solar system. &rdquo;<br />- Michio Kaku, The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind
-  </p>
-  <hr>
-    <h3>Skills</h3>
-    <ul>
-      <!-- 5 star skills -->
-      <li>Python</li>
-      <li>Dart</li>
-      <li>JSON</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Redux</li>
-      <li>Object Oriented Programming</li>
-      <li>Builder Pattern</li>
-      <li>Command Line Interface</li>
-      <!-- 4 star skills -->
-      <li>Java</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>OpenAPI</li>
-      <li>Mustache</li>
-      <!-- 3 star skills -->
-      <li>Express</li>
-      <li>Flask</li>
-      <li>R</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>Rust</li>
-      <!-- 2 star skills -->
-      <li>Bootstrap</li>
-      <li>MATLAB</li>
-      <li>ElectronJS</li>
-      <!-- 1 star skills -->
-      <li>Chisel</li>
-      <li>Scala</li>
-      <li>RISC-V</li>
-      <li>x86</li>
-    </ul>
+    <h2>Experiences</h2>
 
-    <h3>Languages</h3>
+    <p class="lead">
+      &ldquo;Shall we educate ourselves in what is known, and then casting away all we have acquired, turn to ignorance for aid to guide us among the unknown? &rdquo;<br />- Michael Faraday
+    </p>
 
-    <ul>
-      <!-- 5 stars -->
-      <li>English</li>
-      <!-- 3 stars -->
-      <li>Spanish (High school proficiency)</li>
-      <!-- 2 stars -->
-      <li>Cantonese (Can understand a bit)</li>
-    </ul>
+    <hr>
+      <h3>Education</h3>
+      <div class="row">
+        <div class="col-md-4">
+            <h4>University of California, Davis</h4>
+            <p>Sep 2018 - current</p>
+
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Course - Data Structures, Algorithms, & Programming</strong>
+            <span>
+              The design of proper data-structures and algorithms is crucial for application performance.
+              This course taught me how to think clearly about solving complex programming tasks,
+              how to use abstractions, and how to choose appropritate data structures and algorithms.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Udemy</h4>
+            <p>Mar 2019 - Dec 2019</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Course - The Web Developer Bootcamp</strong>
+            <span>
+              This course taught me the fundamentals of web development, from the basics of frontend
+              development with HTML, CSS, and JavaScript, to the nooks and cranny of backend development
+              with Express and MongoDB.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Piedmont Hills High School</h4>
+          <p>Aug 2014 - Jun 2018 </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Course - AP Computer Science A</strong>
+            <span>
+              My Hello World into the world of programming.
+              Through learning the Java programming language, I learned core programming concepts
+              including object-oriented programming, documentation, and testing.
+            </span>
+          </p>
+        </div>
+      </div>
+    <hr>
+      <h3>Career</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>scadnano (continuing)</h4>
+          <p>Sep 2020 - current</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Part-time - Researcher</strong>
+            <span>
+              After my intenship at Cisco ended,
+              I returned to working with Professor Dave Doty on developing scadnano after my
+              internship at Cisco. scadnano is a web application for designing DNA nanostructures.
+              I presented the software at the 26th International Conference on DNA Computing and
+              Molecular Programming. Afterwards, many more researchers began using scadnano, leading
+              to many new feature requests and also bug reports. My current work is mostly
+              addressing these new feature requests and bug reports.
+              <span>
+                <a href="https://scadnano.org/" target="_blank">https://scadnano.org/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>RoveCrest</h4>
+          <p>Jul 2020 - current</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Communications Subsystem Programmer</strong>
+            <span>
+              Shortly after
+              beginning my internship at Cisco, I also earned a position
+              on the RoveCrest Communication Team, where I am currently working
+              on developing a GUI for controlling the rover and displaying
+              visual and geolocation data.
+              <span>
+                <a href="http://rovecrest.com/" target="_blank">http://rovecrest.com/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Cisco</h4>
+          <p>Jun 2020 - Sep 2020</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Internship - Software Engineer</strong>
+            <span>
+              For the summer of my sophmore year, I did my first industry internship at Cisco.
+              There, I learned to to apply my knowledge
+              of Java to build the foundation of the Cisco SD-WAN SDK from the ground up.
+              I also learned the OpenAPI standard how to utilize OpenAPI tools to customize
+              the SDK baseline with support for features like cookie-based authentication,
+              pagination, and SSL certificate checking.
+              <span>
+                <a href="https://www.cisco.com/" target="_blank">https://www.cisco.com/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>scadnano</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p>Sep 2019 - Jun 2020</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Part-time - Researcher</strong>
+            <span>
+              After summer ended, I continued working on scadnano part-time for the duration
+              of my sophmore year.
+              I added unit testing for Redux reducers and a few React components.
+              I implemented continuous integration pipelines using Github Actions.
+              I also implemented continuous deployment pipelines for the web application
+              by using Github Pages and Github Actions for the web application and
+              Read the Docs for the Python library's documentation site.
+              I also integrated several important features to the web application, most notably
+              an import and export to cadnano to support legacy cadnano users.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p>Jun 2019 - Sep 2019</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Fulltime - Researcher</strong>
+            <span>
+              Summer of my freshmen year, I began working with Professor Dave Doty on
+              developing scadnano. For the first two months, I experimented with web development
+              using Rust-compiled Web Assembly, but concluded that it was too novel to use readily.
+              We ended up sticking with the Dart programming language because it has better support
+              for web development while also having the benefit of type-checking. I developed the
+              SVG-PNG cache which greatly improved performance of panning and zooming by replacing
+              expensive SVGs with cheaper PNG images.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        <h4>UC Davis Center for Integrated Computing and STEM Education</h4>
+        <p>Apr 2019 - Jun 2019</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Internship - Robotics Intern</strong>
+            <span>
+              During the spring quarter of my freshmen year, I worked under
+              the supervision of Professor Harry H. Cheng as an intern to
+              test RoboBlocky, a block-based computing environment for STEM education.
+              I often used Chrome DevTools to identify errors and relayed them to
+              the RoboBlockly development team. I also served for the support team for
+              the 2019 RoboPlay Competition by offering assistant to participating teams
+              on technical issues.
+              <span>
+                <a href="https://c-stem.ucdavis.edu/" target="_blank">https://c-stem.ucdavis.edu/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        <h4>CS Peer Tutoring</h4>
+        <p>
+          Apr 2019 - Jun 2019
+          <br>
+          Sep 2019 - Dec 2019
+        </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Tutor</strong>
+            <span>
+              During the spring quarter of my freshmen year and fall quarter of sophmore year, I
+              provided one-on-one guidance with students on assignments relating to topics such as:
+              object-oriented programming, data structures, algorithms, and discrete mathematics, as well
+              as general programming help for C, C++, UNIX, Python, x86, and MIPS.
+              <span>
+                <a href="https://sites.google.com/view/cs-tutoring-ucd/" target="_blank">https://sites.google.com/view/cs-tutoring-ucd/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        <h4>Space and Satellite Systems</h4>
+        <p>Jan 2019 - Mar 2019</p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Computer Science Subsystem Programmer</strong>
+            <span>
+              During the winter quarter of my freshmen year, I became
+              involved with my first programming club at UC Davis. I applied my knowledge of
+              Python to implement the Simplified General Perturbations (SGP) model
+              to predict the orbital state vectors of the club's satellite be launched
+              in 2021.
+              <span>
+                <a href="https://www.ucdspaceandsatellitesystems.com/" target="_blank">https://www.ucdspaceandsatellitesystems.com/</a>
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
 
 
-    <h3>Tools</h3>
+    <h2>Abilities</h2>
+    <p class="lead">
+      &ldquo;The brain weighs only three pounds, yet it is the most complex object in the solar system. &rdquo;<br />- Michio Kaku, The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind
+    </p>
+    <hr>
+      <h3>Skills</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <!-- 5 star skills -->
+            <li>Python</li>
+            <li>Dart</li>
+            <li>JSON</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Object Oriented Programming</li>
+            <li>Builder Pattern</li>
+            <li>Command Line Interface</li>
+            <!-- 4 star skills -->
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>OpenAPI</li>
+            <li>Mustache</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <!-- 3 star skills -->
+            <li>Express</li>
+            <li>Flask</li>
+            <li>R</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Rust</li>
+            <!-- 2 star skills -->
+            <li>Bootstrap</li>
+            <li>MATLAB</li>
+            <li>ElectronJS</li>
+            <!-- 1 star skills -->
+            <li>Chisel</li>
+            <li>Scala</li>
+            <li>RISC-V</li>
+            <li>x86</li>
+          </ul>
+        </div>
+      </div>
 
-    <ul>
-      <!-- 5 stars -->
-      <li>Linux (3 years)</li>
-      <li>VS Code (3 years)</li>
-      <li>Git (4 years)</li>
-      <li>Github (4 years)</li>
-      <li>Vim (3 years)</li>
-      <li>Chrome DevTools (4 years)</li>
-      <!-- 4 stars -->
-      <li>TeXstudio (2 years)</li>
-      <li>Node.js</li>
-      <!-- 3 stars -->
-      <li>Mac (4 months)</li>
-      <li>Intellij (4 months)</li>
-      <!-- 2 stars -->
-      <li>Windows (8 years)</li>
-      <!-- 1 star -->
-      <li>Logism</li>
-      <li>Google Cloud Platform</li>
-      <li>Docker</li>
-      <li>WildFly</li>
-    </ul>
+      <hr>
 
-  <h2>Projects</h2>
-  <p>
-	  &ldquo;An expert is a man who has made all the mistakes which can be made in a very narrow field. &rdquo;<br />- Niels Bohr
-  </p>
-  <hr>
-    <h3>scadnano</h3>
-      <figcaption>
-        <p>scadnano, a web app for designing DNA nanostructures</p>
-        <p><strong>Tags:</strong> <br> React, Redux, Dart, Builder Pattern</p>
-        <a href="https://scadnano.org/" target="_blank">View more</a>
-        <a href="https://drops.dagstuhl.de/opus/volltexte/2020/12962/">Publication</a>
-      </figcaption>
+      <h3>Languages</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <!-- 5 stars -->
+            <li>English</li>
+            <!-- 3 stars -->
+            <li>Spanish (High school proficiency)</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <!-- 2 stars -->
+            <li>Cantonese (Can understand a bit)</li>
+          </ul>
+        </div>
+      </div>
 
-    <h3>Viral Watch</h3>
-      <figcaption>
-        <p>Built the website for the Viral Watch SacHacks team to display COVID-19 predictions</p>
-        <p><strong>Tags:</strong> <br>Bootstrap, Express.js, Google Cloud Platform, JavaScript</p>
-        <a href="https://tableau-test-269022.appspot.com/" target="_blank">View more</a>
-        <a href="https://devpost.com/software/viral-protector">SacHacks 2020 1st Overall Best and 1st IBM Track</a>
-      </figcaption>
+      <hr>
 
-    <h3>Find My Spot</h3>
-      <figcaption>
-        <p>Built a Flask server for the Find My Spot messenger bot</p>
-        <p><strong>Tags:</strong> <br>Flask, Python</p>
-        <a href="https://www.facebook.com/sachacks2018findmyspot/" target="_blank">View more</a>
-        <a href="https://sachacks.io/2018/index.html">SacHacks 2018 Best Team Branding</a>
-      </figcaption>
+      <h3>Tools</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <!-- 5 stars -->
+            <li>Linux (3 years)</li>
+            <li>VS Code (3 years)</li>
+            <li>Git (4 years)</li>
+            <li>Github (4 years)</li>
+            <li>Vim (3 years)</li>
+            <li>Chrome DevTools (4 years)</li>
+            <!-- 4 stars -->
+            <li>TeXstudio (2 years)</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <!-- 3 stars -->
+            <li>Mac (4 months)</li>
+            <li>Intellij (4 months)</li>
+            <!-- 2 stars -->
+            <li>Windows (8 years)</li>
+            <!-- 1 star -->
+            <li>Logism</li>
+            <li>Google Cloud Platform</li>
+            <li>Docker</li>
+            <li>WildFly</li>
+          </ul>
+        </div>
+      </div>
 
-    <h3>Spherical Mirror Simulator</h3>
-      <figcaption>
-        <p>Built web app to help students visualize optics equations</p>
-        <p><strong>Tags:</strong> <br>HTML5, JavaScript</p>
-        <a href="https://unhumbleben.github.io/optics/" target="_blank">View more</a>
-        <a href="https://devpost.com/software/spherical-mirror-simulator">WilHacks Best Education Hack</a>
-      </figcaption>
+    <h2>Projects</h2>
+    <p class="lead">
+      &ldquo;An expert is a man who has made all the mistakes which can be made in a very narrow field. &rdquo;<br />- Niels Bohr
+    </p>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>scadnano</h3>
+          <figure>
+            <img src="images/scadnano.png" alt="scadnano" width="400">
+            <figcaption>
+              <p>scadnano, a web app for designing DNA nanostructures</p>
+              <p><strong>Tags:</strong> <br> React, Redux, Dart, Builder Pattern</p>
+              <a href="https://scadnano.org/" target="_blank">View more</a>
+              <span>|</span>
+              <a href="https://drops.dagstuhl.de/opus/volltexte/2020/12962/" target="_blank">Publication</a>
+              <span>|</span>
+              <a href="https://youtu.be/BlOnKAK1xdE" target="_blank">Talk</a>
+            </figcaption>
+          </figure>
+      </div>
+      <div class="col-md-6">
+        <h3>Viral Watch</h3>
+          <figure>
+            <img src="images/viralwatch.png" alt="Viral Watch" width="400">
+            <figcaption>
+              <p>Built the website for the Viral Watch SacHacks team to display COVID-19 predictions</p>
+              <p><strong>Tags:</strong> <br>Bootstrap, Express.js, Google Cloud Platform, JavaScript</p>
+              <a href="https://tableau-test-269022.appspot.com/" target="_blank">View more</a>
+              <span>|</span>
+              <a href="https://devpost.com/software/viral-protector" target="_blank">SacHacks 2020 1st Overall Best and 1st IBM Track</a>
+            </figcaption>
+          </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Find My Spot</h3>
+          <figure>
+            <img src="images/find-my-spot.png" alt="Find My Spot" width="400" height="250">
+            <figcaption>
+              <p>Built a Flask server for the Find My Spot messenger bot</p>
+              <p><strong>Tags:</strong> <br>Flask, Python</p>
+              <a href="https://www.facebook.com/sachacks2018findmyspot/" target="_blank">View more</a>
+              <span>|</span>
+              <a href="https://sachacks.io/2018/index.html" target="_blank">SacHacks 2018 Best Team Branding</a>
+            </figcaption>
+          </figure>
+      </div>
+      <div class="col-md-6">
+        <h3>Spherical Mirror Simulator</h3>
+          <figure>
+            <img src="images/spherical-mirror-simulator.png" alt="Spherical Mirror Simulator" width="400">
 
-  <h2>Contacts</h2>
-  <p>
-	  &ldquo;Good work is not done by &lsquo;humble&rsquo; men &rdquo;<br />- G. H. Hardy
-  </p>
-  <hr>
+            <figcaption>
+              <p>Built web app to help students visualize optics equations</p>
+              <p><strong>Tags:</strong> <br>HTML5, JavaScript</p>
+              <a href="https://unhumbleben.github.io/optics/" target="_blank">View more</a>
+              <span>|</span>
+              <a href="https://devpost.com/software/spherical-mirror-simulator" target="_blank">WilHacks Best Education Hack</a>
+            </figcaption>
+          </figure>
+      </div>
+    </div>
 
-  <ul>
-    <li><a href="https://www.linkedin.com/in/benjamin-lee-1a8a90177/" target="_blank">https://www.linkedin.com/in/benjamin-lee-1a8a90177/</a></li>
-    <li><a href="mailto:bnllee@ucdavis.edu" target="_blank">bnllee@ucdavis.edu</a></li>
-  </ul>
 
-  <hr>
+    <h2>Contacts</h2>
+    <p class="lead">
+      &ldquo;Good work is not done by &lsquo;humble&rsquo; men &rdquo;<br />- G. H. Hardy
+    </p>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/benjamin-lee-1a8a90177/" target="_blank">https://www.linkedin.com/in/benjamin-lee-1a8a90177/</a></li>
+          <li><a href="mailto:bnllee@ucdavis.edu" target="_blank">bnllee@ucdavis.edu</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><a href="https://github.com/UnHumbleBen" target="_blank">UnHumbleBen</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+  </div>
 </body>
 
 </html>
