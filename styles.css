@@ -48,6 +48,10 @@ body {
   opacity: 0.75;
 }
 
+.citation-text {
+  font-size: 0.8em;
+}
+
 h2 {
   font-size: 50px;
   text-align: center;
