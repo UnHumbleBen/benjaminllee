@@ -1,3 +1,68 @@
+body {
+  background: #f3efe0;
+}
 #profile-image {
   border-radius: 50%;
+  border: 3px solid #b49768;
+}
+
+#jumbotron {
+  background: center fixed url(images/background.jpeg);
+  background-size: cover;
+}
+
+#jumbotron .container {
+  position: relative;
+  top: 40%;
+  z-index: 2;
+  text-align: center;
+}
+
+#jumbotron .container h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  border-bottom-color: rgba(255,255,255,0.35);
+  display: inline-block;
+}
+
+#jumbotron h1 {
+  font-size: 65px;
+}
+
+#jumbotron .lead {
+  font-size: 28px;
+}
+
+#jumbotron  .container > * {
+  text-align: center;
+  color: #ffffff;
+}
+
+#jumbotron .overlay {
+  background-color: #227aa3;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p.lead {
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 40px 180px;
+}
+
+h2, h3 {
+  color: #227aa3;
+  font-weight: 300;
 }
