@@ -79,6 +79,10 @@ h4 {
   font-size: 1.25em;
 }
 
+#experiences p > strong {
+    display: block;
+    margin-bottom: 10px;
+}
 
 .gray-background {
   background: #434242;
