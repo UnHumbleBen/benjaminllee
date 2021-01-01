@@ -80,8 +80,21 @@ h4 {
 }
 
 #experiences p > strong {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#abilities li:hover {
+  background: #f2f2f2;
+}
+
+#abilities li:hover .ability-score svg {
+  margin-left: 2px;
+}
+
+.ability-score {
+  float: right;
+  color: #227aa3;
 }
 
 .gray-background {
