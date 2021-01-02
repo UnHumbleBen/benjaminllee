@@ -1,5 +1,9 @@
 var jumbotron = document.getElementById('jumbotron');
 
-window.addEventListener('resize', (_) => {
+function handleResize() {
   jumbotron.style.height = window.innerHeight + 'px';
-});
+}
+
+window.addEventListener('resize', (_) => { handleResize() });
+
+handleResize();
