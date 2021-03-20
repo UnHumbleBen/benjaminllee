@@ -1,44 +1,68 @@
 body {
   background: #f3efe0;
 }
+
+#navigation-bar.nav-white .navbar-brand > * {
+  fill: white;
+}
+
+.navbar-brand > * {
+  fill: #227aa3;
+}
+
+#navigation-bar.nav-white .nav-item > * {
+  color: white;
+}
+
+.nav-item > .nav-link.active {
+  border-bottom: 4px solid #227aa3;
+  background-color: transparent;
+  color: #227aa3;
+}
+
+a:hover {
+  color: #227aa3;
+  transform: scale(1.1);
+}
+
 #profile-image {
   border-radius: 50%;
   border: 5px solid #227aa3;
 }
 
-#jumbotron {
+#top {
   background: center fixed url(images/background.jpeg);
   background-size: cover;
 }
 
-#jumbotron .container {
+#top .container {
   position: relative;
   top: 40%;
   z-index: 2;
   text-align: center;
 }
 
-#jumbotron .container h1 {
+#top .container h1 {
   padding-bottom: 20px;
   border-bottom: 1px solid #ffffff;
   border-bottom-color: rgba(255,255,255,0.35);
   display: inline-block;
 }
 
-#jumbotron h1 {
+#top h1 {
   font-size: 65px;
 }
 
-#jumbotron .lead {
+#top .lead {
   font-size: 28px;
 }
 
-#jumbotron  .container > * {
+#top  .container > * {
   text-align: center;
   color: #ffffff;
 }
 
-#jumbotron .overlay {
+#top .overlay {
   background-color: #227aa3;
   position: absolute;
   top: 0px;
