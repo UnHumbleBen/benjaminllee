@@ -24,7 +24,7 @@ function getCurrentScroll() {
 
 // Changes navbar color and fill to white when scroll is at the top.
 function handleWhiteNavBar() {
-  if(this.scrollY < window.innerHeight) {
+  if (this.scrollY < window.innerHeight) {
     nav.classList.add('nav-white');
   } else {
     nav.classList.remove('nav-white');
@@ -38,7 +38,7 @@ function debugScrollSpy() {
 
 function main() {
   handleResize();
-  window.addEventListener('resize', (_) => { handleResize() });
+  window.addEventListener('resize', (_) => { handleResize(); });
   window.addEventListener('load', (_) => {
     handleWhiteNavBar();
     // For some reason, need to call this in order to make a ScrollSpy instance.
@@ -46,7 +46,7 @@ function main() {
       target: '#navbarSupportedContent'
     });
     hotfixScrollSpy();
-    window.scrollBy(0,1);
+    window.scrollBy(0, 1);
   });
   window.addEventListener('scroll', () => { handleWhiteNavBar(); });
 }
