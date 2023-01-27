@@ -1,5 +1,6 @@
 const topElement = document.getElementById('top');
 const nav = document.querySelector('#navigation-bar');
+const templateIds = ["five-star", "four-star", "three-star", "two-star", "one-star"];
 
 // Size the top element so that the transparent overlay is properly sized.
 function handleResize() {
@@ -36,6 +37,27 @@ function debugScrollSpy() {
   console.log(bootstrap.ScrollSpy.getInstance(document.body)['_offsets'])
 }
 
+function defineCustomElementsFromTemplates() {
+  for (let i = 0; i < templateIds.length; i++) {
+    defineCustomElementFromTemplate(templateIds[i]);
+  }
+}
+
+function defineCustomElementFromTemplate(templateId) {
+  customElements.define(
+    templateId,
+    class extends HTMLElement {
+      constructor() {
+        super();
+        let template = document.getElementById(templateId);
+        let templateContent = template.content;
+        const shadowRoot = this.attachShadow({ mode: "open" });
+        shadowRoot.appendChild(templateContent.cloneNode(true));
+      }
+    }
+  );
+}
+
 function main() {
   handleResize();
   window.addEventListener('resize', (_) => { handleResize(); });
@@ -49,6 +71,7 @@ function main() {
     window.scrollBy(0, 1);
   });
   window.addEventListener('scroll', () => { handleWhiteNavBar(); });
+  defineCustomElementsFromTemplates();
 }
 
 main();
